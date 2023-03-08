@@ -15,8 +15,9 @@ namespace MyInternProject1.Controllers
         DefaultInput _input;
         Mover _mover;
         Rotator _rotator;
+        Fuel _fuel;
 
-        bool _isForceUp;
+        bool _canForceUp;
         float _leftRight;
 
         public float TurnSpeed => _turnSpeed;
@@ -28,20 +29,19 @@ namespace MyInternProject1.Controllers
             _input = new DefaultInput();
             _mover = new Mover(this);
             _rotator = new Rotator(this);
-
-        //_rigidbody = GetComponent<Rigidbody>();
-
+            _fuel = GetComponent<Fuel>();
         }
 
         private void Update()
         {
-            if (_input.isForceUp)
+            if (_input.isForceUp && !_fuel.IsFuelEmpty)
             {
-                _isForceUp = true;
+                _canForceUp = true;
             }
             else
             {
-                _isForceUp = false;
+                _canForceUp = false;
+                _fuel.FuelIncrease(0.05f);
             }
             _leftRight = _input.leftRight;
             
@@ -49,10 +49,10 @@ namespace MyInternProject1.Controllers
 
         private void FixedUpdate()
         {
-            if (_isForceUp)
+            if (_canForceUp)
             {
                 _mover.FixedTick();
-                //_rigidbody.AddForce(Vector3.up * Time.deltaTime*_force);
+                _fuel.FuelDecrease(0.2f);
             }
             _rotator.FixedTick(_leftRight);
         } 
