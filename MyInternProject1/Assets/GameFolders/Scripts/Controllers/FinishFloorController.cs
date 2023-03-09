@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using MyInternProject1.Managers;
 
 namespace MyInternProject1.Controllers
 {
@@ -23,6 +24,7 @@ namespace MyInternProject1.Controllers
             {
                 //GameOver
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                GameManager.Instance.GameOver();
             }
 
 
