@@ -19,6 +19,7 @@ namespace MyInternProject1.Controllers
             {
                 _fireWork.gameObject.SetActive(true);
                 _finishLight.gameObject.SetActive(true);
+                GameManager.Instance.LevelSucceed();
             }
             else
             {

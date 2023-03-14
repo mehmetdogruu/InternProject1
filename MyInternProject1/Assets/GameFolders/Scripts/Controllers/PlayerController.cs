@@ -40,6 +40,7 @@ namespace MyInternProject1.Controllers
         private void OnEnable()
         {
             GameManager.Instance.OnGameOver += HandleOnEventTrigger;
+            GameManager.Instance.OnLevelCompleted += HandleOnEventTrigger;
         }
 
 
@@ -47,6 +48,7 @@ namespace MyInternProject1.Controllers
         private void OnDisable()
         {
             GameManager.Instance.OnGameOver -= HandleOnEventTrigger;
+            GameManager.Instance.OnLevelCompleted -= HandleOnEventTrigger;
 
         }
 
