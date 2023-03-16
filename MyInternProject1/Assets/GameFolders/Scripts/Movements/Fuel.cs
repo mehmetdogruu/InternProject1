@@ -11,6 +11,7 @@ namespace MyInternProject1.Movements
         [SerializeField] ParticleSystem _particle;
 
         public bool IsFuelEmpty => _currentFuel < 1;
+        public float CurrentFuel => _currentFuel / _maxFuel;
         private void Awake()
         {
             _currentFuel = _maxFuel;  

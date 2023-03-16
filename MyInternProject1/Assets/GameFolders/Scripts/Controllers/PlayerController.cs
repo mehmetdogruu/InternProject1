@@ -26,6 +26,8 @@ namespace MyInternProject1.Controllers
 
         public float Force => _force;
 
+        public bool CanMove => _canMove;
+
         private void Awake()
         {
             _input = new DefaultInput();

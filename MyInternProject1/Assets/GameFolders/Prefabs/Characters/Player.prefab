@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4539763809314166742}
   - component: {fileID: 4259222919475989549}
   - component: {fileID: 2743621159401136966}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: win-frem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 1389957815790583356}
   - component: {fileID: 463816403638161595}
   - component: {fileID: 6651524171710939720}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: nute
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8471783492334930736}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AtomRocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 2093232115700490842}
   - component: {fileID: 5855876709536106863}
   - component: {fileID: 6687215589511153161}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: fire-nozzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 3893627689697880998}
   - component: {fileID: 1685849505401689724}
   - component: {fileID: 6281488242590212931}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -382,7 +382,7 @@ GameObject:
   - component: {fileID: 8385386293848742584}
   - component: {fileID: 2231139479804284456}
   - component: {fileID: 9019590647544035325}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: boddy.belt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +465,7 @@ GameObject:
   - component: {fileID: 7100158195031651062}
   - component: {fileID: 3943512865797426030}
   - component: {fileID: 4458650548169201433}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: boddy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -548,7 +548,7 @@ GameObject:
   - component: {fileID: 4401410706747608733}
   - component: {fileID: 7440407955033883123}
   - component: {fileID: 8736339732674337650}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: win.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -631,7 +631,7 @@ GameObject:
   - component: {fileID: 1042135121072351691}
   - component: {fileID: 1280236030900893621}
   - component: {fileID: 8317624525293961509}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -716,7 +716,7 @@ GameObject:
   - component: {fileID: 7150758372234528274}
   - component: {fileID: 4963614513572671759}
   - component: {fileID: 4099757722891329807}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -805,9 +805,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3162739695684681260}
     m_Modifications:
+    - target: {fileID: 100000, guid: 1c20c7996d683754db1f0f62a361952c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 1c20c7996d683754db1f0f62a361952c, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 1c20c7996d683754db1f0f62a361952c, type: 3}
       propertyPath: m_Name
       value: CFX4 Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 1c20c7996d683754db1f0f62a361952c, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 1c20c7996d683754db1f0f62a361952c, type: 3}
       propertyPath: m_RootOrder
